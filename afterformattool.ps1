@@ -1056,7 +1056,7 @@ $lightmode.Add_Click( {
 
 $sophia.Add_Click({
 	   Write-Host "Initializing Sophia project"
-	   powershell.exe -exec bypass -C "iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JIVKw'))"
+	   
 	   
 	})
 
