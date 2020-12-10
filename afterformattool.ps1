@@ -28,7 +28,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 $Form = New-Object system.Windows.Forms.Form
 $Form.ClientSize = New-Object System.Drawing.Point(1400, 900)
-$Form.text = "Form"
+$Form.text = "After Format Tool"
 $Form.TopMost = $false
 
 $Panel1 = New-Object system.Windows.Forms.Panel
@@ -413,7 +413,7 @@ $Label19.location = New-Object System.Drawing.Point(71, 103)
 $Label19.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label20 = New-Object system.Windows.Forms.Label
-$Label20.text = "Instructions"
+$Label20.text = "'Sophia' debloat script (by farag2)"
 $Label20.AutoSize = $true
 $Label20.width = 169
 $Label20.height = 23
@@ -421,7 +421,8 @@ $Label20.location = New-Object System.Drawing.Point(581, 463)
 $Label20.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $Label21 = New-Object system.Windows.Forms.Label
-$Label21.text = "- This will modify your system and I highly recommend backing up any data you have prior to running!"
+$Label21.text = "Despite the above features, this script does all the job and much more. It will modify your system and I highly
+recommend backing up any data you have prior to running! This is made by 'farag2'. You can hop to his github page and give him a star for his project!"
 $Label21.AutoSize = $true
 $Label21.width = 150
 $Label21.height = 10
@@ -435,6 +436,13 @@ $Label22.width = 150
 $Label22.height = 10
 $Label22.location = New-Object System.Drawing.Point(4, 14)
 $Label22.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
+
+$sophia = New-Object system.Windows.Forms.Button
+$sophia.text = "Install Sophia"
+$sophia.width = 200
+$sophia.height = 115
+$sophia.location = New-Object System.Drawing.Point(650, 550)
+$sophia.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 16)
 
 # $Label23 = New-Object system.Windows.Forms.Label
 # $Label23.text = "- Need to Restore action center, cortana, etc.? Run the Restore Script: https://youtu.be/H2ydDcqRZyM"
@@ -457,7 +465,7 @@ $Label22.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 # $lightmode.location = New-Object System.Drawing.Point(417, 45)
 # $lightmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
-$Form.controls.AddRange(@($Panel1, $Label1, $Panel2, $Label3, $Panel3, $Label4, $Label15, $Panel4, $Label20, $Label21, $Label23, $PictureBox1))
+$Form.controls.AddRange(@($Panel1, $Label1, $Panel2, $Label3, $Panel3, $Label4, $Label15, $Panel4, $Label20, $Label21, $Label23, $PictureBox1, $sophia))
 $Panel1.controls.AddRange(@($installchoco, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $windowssearch, $actioncenter, $darkmode, $visualfx, $onedrive, $Label22, $lightmode))
 $Panel3.controls.AddRange(@($securitylow, $securityhigh, $Label5, $Label6, $Label7, $Label8, $Label9, $Label10, $Label11, $Label12, $Label13))
@@ -1044,6 +1052,11 @@ $lightmode.Add_Click( {
 		Write-Host "Switching Back to Light Mode"
 		Remove-ItemProperty -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize -Name AppsUseLightTheme
 		$wshell.Popup("Operation Completed", 0, "Done", 0x0)
+	})
+
+$sophia.Add_Click({
+	   Write-Host "Initializing Sophia project"
+	   iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JIVKw'))
 	})
 
 [void]$Form.ShowDialog()
