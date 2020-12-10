@@ -37,7 +37,7 @@ $Panel1.width = 1400
 $Panel1.location = New-Object System.Drawing.Point(9, 90)
 
 $Label1 = New-Object system.Windows.Forms.Label
-$Label1.text = "Program Installation"
+$Label1.text = "After Format Tool"
 $Label1.AutoSize = $true
 $Label1.width = 40
 $Label1.height = 20
