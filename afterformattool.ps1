@@ -27,12 +27,12 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 $Form = New-Object system.Windows.Forms.Form
-$Form.ClientSize = New-Object System.Drawing.Point(1400, 900)
+$Form.ClientSize = New-Object System.Drawing.Point(1300, 700)
 $Form.text = "After Format Tool"
 $Form.TopMost = $false
 
 $Panel1 = New-Object system.Windows.Forms.Panel
-$Panel1.height = 156
+$Panel1.height = 171
 $Panel1.width = 1400
 $Panel1.location = New-Object System.Drawing.Point(9, 90)
 
@@ -62,14 +62,14 @@ $parsec = New-Object system.Windows.Forms.Button
 $parsec.text = "Parsec"
 $parsec.width = 150
 $parsec.height = 30
-$parsec.location = New-Object System.Drawing.Point(250, 61)
+$parsec.location = New-Object System.Drawing.Point(250, 51)
 $parsec.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $winrar = New-Object system.Windows.Forms.Button
 $winrar.text = "Win-Rar"
 $winrar.width = 150
 $winrar.height = 30
-$winrar.location = New-Object System.Drawing.Point(584, 104)
+$winrar.location = New-Object System.Drawing.Point(584, 84)
 $winrar.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $xnview = New-Object system.Windows.Forms.Button
@@ -83,28 +83,42 @@ $qbittorrent = New-Object system.Windows.Forms.Button
 $qbittorrent.text = "QBittorrent"
 $qbittorrent.width = 150
 $qbittorrent.height = 30
-$qbittorrent.location = New-Object System.Drawing.Point(417, 61)
+$qbittorrent.location = New-Object System.Drawing.Point(417, 51)
 $qbittorrent.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $steam = New-Object system.Windows.Forms.Button
 $steam.text = "Steam"
 $steam.width = 150
 $steam.height = 30
-$steam.location = New-Object System.Drawing.Point(417, 104)
+$steam.location = New-Object System.Drawing.Point(417, 84)
 $steam.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $greenshot = New-Object system.Windows.Forms.Button
 $greenshot.text = "Greenshot"
 $greenshot.width = 150
 $greenshot.height = 30
-$greenshot.location = New-Object System.Drawing.Point(250, 104)
+$greenshot.location = New-Object System.Drawing.Point(250, 84)
 $greenshot.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+
+$random = New-Object system.Windows.Forms.Button
+$random.text = "random"
+$random.width = 150
+$random.height = 30
+$random.location = New-Object System.Drawing.Point(250, 117)
+$random.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+
+$random2 = New-Object system.Windows.Forms.Button
+$random2.text = "random2"
+$random2.width = 150
+$random2.height = 30
+$random2.location = New-Object System.Drawing.Point(417, 117)
+$random2.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $mysqlworkbench = New-Object system.Windows.Forms.Button
 $mysqlworkbench.text = "MySQL Workbench"
 $mysqlworkbench.width = 150
 $mysqlworkbench.height = 30
-$mysqlworkbench.location = New-Object System.Drawing.Point(584, 61)
+$mysqlworkbench.location = New-Object System.Drawing.Point(584, 51)
 $mysqlworkbench.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $vlc = New-Object system.Windows.Forms.Button
@@ -118,14 +132,14 @@ $androidstudio = New-Object system.Windows.Forms.Button
 $androidstudio.text = "Android Studio"
 $androidstudio.width = 150
 $androidstudio.height = 30
-$androidstudio.location = New-Object System.Drawing.Point(751, 105)
+$androidstudio.location = New-Object System.Drawing.Point(751, 84)
 $androidstudio.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $onlyoffice = New-Object system.Windows.Forms.Button
 $onlyoffice.text = "OnlyOffice"
 $onlyoffice.width = 150
 $onlyoffice.height = 30
-$onlyoffice.location = New-Object System.Drawing.Point(751, 61)
+$onlyoffice.location = New-Object System.Drawing.Point(751, 51)
 $onlyoffice.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $vscode = New-Object system.Windows.Forms.Button
@@ -146,14 +160,14 @@ $git = New-Object system.Windows.Forms.Button
 $git.text = "Git"
 $git.width = 150
 $git.height = 30
-$git.location = New-Object System.Drawing.Point(920, 61)
+$git.location = New-Object System.Drawing.Point(920, 51)
 $git.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $barrier = New-Object system.Windows.Forms.Button
 $barrier.text = "Barrier"
 $barrier.width = 150
 $barrier.height = 30
-$barrier.location = New-Object System.Drawing.Point(920, 105)
+$barrier.location = New-Object System.Drawing.Point(920, 84)
 $barrier.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $battlenet = New-Object system.Windows.Forms.Button
@@ -167,14 +181,14 @@ $unifiedremote = New-Object system.Windows.Forms.Button
 $unifiedremote.text = "Unified Remote"
 $unifiedremote.width = 150
 $unifiedremote.height = 30
-$unifiedremote.location = New-Object System.Drawing.Point(1090, 61)
+$unifiedremote.location = New-Object System.Drawing.Point(1090, 51)
 $unifiedremote.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $geforcenow = New-Object system.Windows.Forms.Button
 $geforcenow.text = "Nvidia GeforceNow"
 $geforcenow.width = 150
 $geforcenow.height = 30
-$geforcenow.location = New-Object System.Drawing.Point(1090, 105)
+$geforcenow.location = New-Object System.Drawing.Point(1090, 84)
 $geforcenow.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label2 = New-Object system.Windows.Forms.Label
@@ -195,63 +209,63 @@ $Label3.text = "System Tweaks"
 $Label3.AutoSize = $true
 $Label3.width = 230
 $Label3.height = 25
-$Label3.location = New-Object System.Drawing.Point(195, 251)
+$Label3.location = New-Object System.Drawing.Point(100, 255)
 $Label3.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $essentialtweaks = New-Object system.Windows.Forms.Button
 $essentialtweaks.text = "Essential Tweaks"
 $essentialtweaks.width = 200
 $essentialtweaks.height = 115
-$essentialtweaks.location = New-Object System.Drawing.Point(24, 34)
+$essentialtweaks.location = New-Object System.Drawing.Point(30, 45)
 $essentialtweaks.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 14)
 
 $backgroundapps = New-Object system.Windows.Forms.Button
 $backgroundapps.text = "Background Apps"
 $backgroundapps.width = 150
 $backgroundapps.height = 30
-$backgroundapps.location = New-Object System.Drawing.Point(251, 45)
+$backgroundapps.location = New-Object System.Drawing.Point(251, 55)
 $backgroundapps.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $cortana = New-Object system.Windows.Forms.Button
 $cortana.text = "Cortana"
 $cortana.width = 150
 $cortana.height = 30
-$cortana.location = New-Object System.Drawing.Point(251, 82)
+$cortana.location = New-Object System.Drawing.Point(251, 92)
 $cortana.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $windowssearch = New-Object system.Windows.Forms.Button
 $windowssearch.text = "Windows Search"
 $windowssearch.width = 150
 $windowssearch.height = 30
-$windowssearch.location = New-Object System.Drawing.Point(417, 119)
+$windowssearch.location = New-Object System.Drawing.Point(417, 129)
 $windowssearch.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $actioncenter = New-Object system.Windows.Forms.Button
 $actioncenter.text = "Action Center"
 $actioncenter.width = 150
 $actioncenter.height = 30
-$actioncenter.location = New-Object System.Drawing.Point(251, 9)
+$actioncenter.location = New-Object System.Drawing.Point(251, 19)
 $actioncenter.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $darkmode = New-Object system.Windows.Forms.Button
 $darkmode.text = "Dark Mode"
 $darkmode.width = 150
 $darkmode.height = 30
-$darkmode.location = New-Object System.Drawing.Point(417, 7)
+$darkmode.location = New-Object System.Drawing.Point(417, 17)
 $darkmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $visualfx = New-Object system.Windows.Forms.Button
 $visualfx.text = "Visual FX"
 $visualfx.width = 150
 $visualfx.height = 30
-$visualfx.location = New-Object System.Drawing.Point(417, 82)
+$visualfx.location = New-Object System.Drawing.Point(417, 92)
 $visualfx.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $onedrive = New-Object system.Windows.Forms.Button
 $onedrive.text = "OneDrive"
 $onedrive.width = 150
 $onedrive.height = 30
-$onedrive.location = New-Object System.Drawing.Point(251, 119)
+$onedrive.location = New-Object System.Drawing.Point(251, 130)
 $onedrive.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $Panel3 = New-Object system.Windows.Forms.Panel
@@ -264,21 +278,21 @@ $Label4.text = "Security"
 $Label4.AutoSize = $true
 $Label4.width = 117
 $Label4.height = 25
-$Label4.location = New-Object System.Drawing.Point(761, 252)
+$Label4.location = New-Object System.Drawing.Point(761, 258)
 $Label4.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $securitylow = New-Object system.Windows.Forms.Button
 $securitylow.text = "Low"
 $securitylow.width = 150
 $securitylow.height = 30
-$securitylow.location = New-Object System.Drawing.Point(36, 119)
+$securitylow.location = New-Object System.Drawing.Point(36, 129)
 $securitylow.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 15, [System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $securityhigh = New-Object system.Windows.Forms.Button
 $securityhigh.text = "High"
 $securityhigh.width = 150
 $securityhigh.height = 30
-$securityhigh.location = New-Object System.Drawing.Point(244, 119)
+$securityhigh.location = New-Object System.Drawing.Point(244, 129)
 $securityhigh.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 15, [System.Drawing.FontStyle]([System.Drawing.FontStyle]::Bold))
 
 $Label5 = New-Object system.Windows.Forms.Label
@@ -286,7 +300,7 @@ $Label5.text = "- Set UAC to Never Prompt"
 $Label5.AutoSize = $true
 $Label5.width = 150
 $Label5.height = 10
-$Label5.location = New-Object System.Drawing.Point(24, 40)
+$Label5.location = New-Object System.Drawing.Point(24, 70)
 $Label5.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label6 = New-Object system.Windows.Forms.Label
@@ -294,7 +308,7 @@ $Label6.text = "- Disable Windows Defender"
 $Label6.AutoSize = $true
 $Label6.width = 150
 $Label6.height = 10
-$Label6.location = New-Object System.Drawing.Point(24, 6)
+$Label6.location = New-Object System.Drawing.Point(24, 36)
 $Label6.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label7 = New-Object system.Windows.Forms.Label
@@ -302,7 +316,7 @@ $Label7.text = "- Disable Defender Updates"
 $Label7.AutoSize = $true
 $Label7.width = 150
 $Label7.height = 10
-$Label7.location = New-Object System.Drawing.Point(24, 23)
+$Label7.location = New-Object System.Drawing.Point(24, 53)
 $Label7.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label8 = New-Object system.Windows.Forms.Label
@@ -310,7 +324,7 @@ $Label8.text = "- Disable Windows Malware Scan"
 $Label8.AutoSize = $true
 $Label8.width = 150
 $Label8.height = 10
-$Label8.location = New-Object System.Drawing.Point(24, 75)
+$Label8.location = New-Object System.Drawing.Point(24, 105)
 $Label8.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label9 = New-Object system.Windows.Forms.Label
@@ -318,7 +332,7 @@ $Label9.text = "- Disable Meltdown Flag"
 $Label9.AutoSize = $true
 $Label9.width = 150
 $Label9.height = 10
-$Label9.location = New-Object System.Drawing.Point(24, 58)
+$Label9.location = New-Object System.Drawing.Point(24, 88)
 $Label9.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label10 = New-Object system.Windows.Forms.Label
@@ -326,7 +340,7 @@ $Label10.text = "- Set UAC to Always Prompt"
 $Label10.AutoSize = $true
 $Label10.width = 25
 $Label10.height = 10
-$Label10.location = New-Object System.Drawing.Point(233, 40)
+$Label10.location = New-Object System.Drawing.Point(233, 105)
 $Label10.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label11 = New-Object system.Windows.Forms.Label
@@ -334,7 +348,7 @@ $Label11.text = "- Enable Windows Defender"
 $Label11.AutoSize = $true
 $Label11.width = 25
 $Label11.height = 10
-$Label11.location = New-Object System.Drawing.Point(233, 57)
+$Label11.location = New-Object System.Drawing.Point(233, 92)
 $Label11.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label12 = New-Object system.Windows.Forms.Label
@@ -342,7 +356,7 @@ $Label12.text = "- Enable Windows Malware Scan"
 $Label12.AutoSize = $true
 $Label12.width = 25
 $Label12.height = 10
-$Label12.location = New-Object System.Drawing.Point(233, 6)
+$Label12.location = New-Object System.Drawing.Point(233, 60)
 $Label12.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label13 = New-Object system.Windows.Forms.Label
@@ -350,7 +364,7 @@ $Label13.text = "- Enable Meltdown Flag"
 $Label13.AutoSize = $true
 $Label13.width = 25
 $Label13.height = 10
-$Label13.location = New-Object System.Drawing.Point(233, 23)
+$Label13.location = New-Object System.Drawing.Point(233, 77)
 $Label13.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label15 = New-Object system.Windows.Forms.Label
@@ -358,7 +372,7 @@ $Label15.text = "Windows Update"
 $Label15.AutoSize = $true
 $Label15.width = 25
 $Label15.height = 10
-$Label15.location = New-Object System.Drawing.Point(58, 459)
+$Label15.location = New-Object System.Drawing.Point(58, 469)
 $Label15.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $Panel4 = New-Object system.Windows.Forms.Panel
@@ -370,14 +384,14 @@ $defaultwindowsupdate = New-Object system.Windows.Forms.Button
 $defaultwindowsupdate.text = "Default Settings"
 $defaultwindowsupdate.width = 300
 $defaultwindowsupdate.height = 30
-$defaultwindowsupdate.location = New-Object System.Drawing.Point(20, 13)
+$defaultwindowsupdate.location = New-Object System.Drawing.Point(20, 23)
 $defaultwindowsupdate.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 14)
 
 $securitywindowsupdate = New-Object system.Windows.Forms.Button
 $securitywindowsupdate.text = "Security Updates Only"
 $securitywindowsupdate.width = 300
 $securitywindowsupdate.height = 30
-$securitywindowsupdate.location = New-Object System.Drawing.Point(20, 119)
+$securitywindowsupdate.location = New-Object System.Drawing.Point(20, 130)
 $securitywindowsupdate.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 14)
 
 $Label16 = New-Object system.Windows.Forms.Label
@@ -385,7 +399,7 @@ $Label16.text = "I recommend doing security updates only."
 $Label16.AutoSize = $true
 $Label16.width = 25
 $Label16.height = 10
-$Label16.location = New-Object System.Drawing.Point(47, 49)
+$Label16.location = New-Object System.Drawing.Point(47, 59)
 $Label16.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label17 = New-Object system.Windows.Forms.Label
@@ -393,7 +407,7 @@ $Label17.text = "- Delays Features updates up to 3 years"
 $Label17.AutoSize = $true
 $Label17.width = 25
 $Label17.height = 10
-$Label17.location = New-Object System.Drawing.Point(71, 66)
+$Label17.location = New-Object System.Drawing.Point(71, 76)
 $Label17.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label18 = New-Object system.Windows.Forms.Label
@@ -401,7 +415,7 @@ $Label18.text = "- Delays Security updates 4 days"
 $Label18.AutoSize = $true
 $Label18.width = 25
 $Label18.height = 10
-$Label18.location = New-Object System.Drawing.Point(71, 84)
+$Label18.location = New-Object System.Drawing.Point(71, 94)
 $Label18.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label19 = New-Object system.Windows.Forms.Label
@@ -409,7 +423,7 @@ $Label19.text = "- Sets Maximum Active Time"
 $Label19.AutoSize = $true
 $Label19.width = 25
 $Label19.height = 10
-$Label19.location = New-Object System.Drawing.Point(71, 103)
+$Label19.location = New-Object System.Drawing.Point(71, 113)
 $Label19.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label20 = New-Object system.Windows.Forms.Label
@@ -430,7 +444,7 @@ $Label21.location = New-Object System.Drawing.Point(390, 507)
 $Label21.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label22 = New-Object system.Windows.Forms.Label
-$Label22.text = "(Unsure!?... Just apply Essential Tweaks)"
+$Label22.text = "(Unsure? Just apply Essential Tweaks)"
 $Label22.AutoSize = $true
 $Label22.width = 150
 $Label22.height = 10
@@ -458,15 +472,15 @@ $sophia.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 16)
 # $PictureBox1.location = New-Object System.Drawing.Point(449, 541)
 # $PictureBox1.imageLocation = ""
 # $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::zoom
-# $lightmode = New-Object system.Windows.Forms.Button
-# $lightmode.text = "Light Mode"
-# $lightmode.width = 150
-# $lightmode.height = 30
-# $lightmode.location = New-Object System.Drawing.Point(417, 45)
-# $lightmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+$lightmode = New-Object system.Windows.Forms.Button
+$lightmode.text = "Light Mode"
+$lightmode.width = 150
+$lightmode.height = 30
+$lightmode.location = New-Object System.Drawing.Point(417, 55)
+$lightmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $Form.controls.AddRange(@($Panel1, $Label1, $Panel2, $Label3, $Panel3, $Label4, $Label15, $Panel4, $Label20, $Label21, $Label23, $PictureBox1, $sophia))
-$Panel1.controls.AddRange(@($installchoco, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
+$Panel1.controls.AddRange(@($installchoco, $random2, $random, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $windowssearch, $actioncenter, $darkmode, $visualfx, $onedrive, $Label22, $lightmode))
 $Panel3.controls.AddRange(@($securitylow, $securityhigh, $Label5, $Label6, $Label7, $Label8, $Label9, $Label10, $Label11, $Label12, $Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19))
