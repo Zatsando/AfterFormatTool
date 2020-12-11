@@ -1107,6 +1107,18 @@ $lightmode.Add_Click( {
 
 $sophia.Add_Click( {
 		Write-Host "Initializing Sophia project"
+        $url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.2/Sophia.v5.2.zip"
+	$output = "C:\Users\Zatsando\Downloads\Sophia.5.2.zip"
+	$start_time = Get-Date
+	
+	$wc = New-Object System.Net.WebClient
+	$wc.DownloadFile($url, $output)
+	#OR
+	(New-Object System.Net.WebClient).DownloadFile($url, $output)
+	
+	Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+	$wshell.Popup("Operation Completed. Check the Downloads folder for the Sophia script.", 0, "Done", 0x0)
+	})
 	   
 	   
 	})
