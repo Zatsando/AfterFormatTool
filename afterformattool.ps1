@@ -42,7 +42,7 @@ $Label1.text = "AFT Windows 10 script"
 $Label1.AutoSize = $true
 $Label1.width = 40
 $Label1.height = 20
-$Label1.location = New-Object System.Drawing.Point(10, 40),[System.Drawing.FontStyle]::Bold
+$Label1.location = New-Object System.Drawing.Point(10, 40), [System.Drawing.FontStyle]::Bold
 $Label1.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 30)
 
 $installchoco = New-Object system.Windows.Forms.Button
@@ -1106,8 +1106,7 @@ $lightmode.Add_Click( {
 	})
 
 $sophia.Add_Click( {
-		Write-Host "Initializing Sophia project"
-        $url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.2/Sophia.v5.2.zip"
+	$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.2/Sophia.v5.2.zip"
 	$output = "C:\Users\Zatsando\Downloads\Sophia.5.2.zip"
 	$start_time = Get-Date
 	
