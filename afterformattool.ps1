@@ -28,6 +28,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 $Form = New-Object system.Windows.Forms.Form
 $Form.ClientSize = New-Object System.Drawing.Point(1300, 700)
+$Form.BackColor = "gray"
 $Form.text = "After Format Tool"
 $Form.TopMost = $false
 
@@ -37,15 +38,16 @@ $Panel1.width = 1400
 $Panel1.location = New-Object System.Drawing.Point(9, 90)
 
 $Label1 = New-Object system.Windows.Forms.Label
-$Label1.text = "After Format Tool"
+$Label1.text = "AFT Windows 10 script"
 $Label1.AutoSize = $true
 $Label1.width = 40
 $Label1.height = 20
-$Label1.location = New-Object System.Drawing.Point(10, 40)
+$Label1.location = New-Object System.Drawing.Point(10, 40),[System.Drawing.FontStyle]::Bold
 $Label1.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 30)
 
 $installchoco = New-Object system.Windows.Forms.Button
 $installchoco.text = "Install Chocolatey"
+$installchoco.BackColor = "green"
 $installchoco.width = 200
 $installchoco.height = 115
 $installchoco.location = New-Object System.Drawing.Point(16, 19)
@@ -53,6 +55,7 @@ $installchoco.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 16)
 
 $brave = New-Object system.Windows.Forms.Button
 $brave.text = "Brave Browser"
+$brave.BackColor = "white"
 $brave.width = 150
 $brave.height = 30
 $brave.location = New-Object System.Drawing.Point(250, 19)
@@ -60,6 +63,7 @@ $brave.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $parsec = New-Object system.Windows.Forms.Button
 $parsec.text = "Parsec"
+$parsec.BackColor = "white"
 $parsec.width = 150
 $parsec.height = 30
 $parsec.location = New-Object System.Drawing.Point(250, 51)
@@ -67,6 +71,7 @@ $parsec.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $winrar = New-Object system.Windows.Forms.Button
 $winrar.text = "Win-Rar"
+$winrar.BackColor = "white"
 $winrar.width = 150
 $winrar.height = 30
 $winrar.location = New-Object System.Drawing.Point(584, 84)
@@ -74,6 +79,7 @@ $winrar.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $xnview = New-Object system.Windows.Forms.Button
 $xnview.text = "X-View"
+$xnview.BackColor = "white"
 $xnview.width = 150
 $xnview.height = 30
 $xnview.location = New-Object System.Drawing.Point(417, 19)
@@ -81,6 +87,7 @@ $xnview.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $qbittorrent = New-Object system.Windows.Forms.Button
 $qbittorrent.text = "QBittorrent"
+$qbittorrent.BackColor = "white"
 $qbittorrent.width = 150
 $qbittorrent.height = 30
 $qbittorrent.location = New-Object System.Drawing.Point(417, 51)
@@ -88,6 +95,7 @@ $qbittorrent.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $steam = New-Object system.Windows.Forms.Button
 $steam.text = "Steam"
+$steam.BackColor = "white"
 $steam.width = 150
 $steam.height = 30
 $steam.location = New-Object System.Drawing.Point(417, 84)
@@ -95,6 +103,7 @@ $steam.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $greenshot = New-Object system.Windows.Forms.Button
 $greenshot.text = "Greenshot"
+$greenshot.BackColor = "white"
 $greenshot.width = 150
 $greenshot.height = 30
 $greenshot.location = New-Object System.Drawing.Point(250, 84)
@@ -102,6 +111,7 @@ $greenshot.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $random = New-Object system.Windows.Forms.Button
 $random.text = "random"
+$random.BackColor = "white"
 $random.width = 150
 $random.height = 30
 $random.location = New-Object System.Drawing.Point(250, 117)
@@ -109,6 +119,7 @@ $random.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $random2 = New-Object system.Windows.Forms.Button
 $random2.text = "random2"
+$random2.BackColor = "white"
 $random2.width = 150
 $random2.height = 30
 $random2.location = New-Object System.Drawing.Point(417, 117)
@@ -116,6 +127,7 @@ $random2.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $mysqlworkbench = New-Object system.Windows.Forms.Button
 $mysqlworkbench.text = "MySQL Workbench"
+$mysqlworkbench.BackColor = "white"
 $mysqlworkbench.width = 150
 $mysqlworkbench.height = 30
 $mysqlworkbench.location = New-Object System.Drawing.Point(584, 51)
@@ -123,6 +135,7 @@ $mysqlworkbench.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10
 
 $vlc = New-Object system.Windows.Forms.Button
 $vlc.text = "VLC"
+$vlc.BackColor = "white"
 $vlc.width = 150
 $vlc.height = 30
 $vlc.location = New-Object System.Drawing.Point(584, 19)
@@ -130,6 +143,7 @@ $vlc.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $androidstudio = New-Object system.Windows.Forms.Button
 $androidstudio.text = "Android Studio"
+$androidstudio.BackColor = "white"
 $androidstudio.width = 150
 $androidstudio.height = 30
 $androidstudio.location = New-Object System.Drawing.Point(751, 84)
@@ -137,6 +151,7 @@ $androidstudio.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $onlyoffice = New-Object system.Windows.Forms.Button
 $onlyoffice.text = "OnlyOffice"
+$onlyoffice.BackColor = "white"
 $onlyoffice.width = 150
 $onlyoffice.height = 30
 $onlyoffice.location = New-Object System.Drawing.Point(751, 51)
@@ -144,6 +159,7 @@ $onlyoffice.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $vscode = New-Object system.Windows.Forms.Button
 $vscode.text = "VS Code"
+$vscode.BackColor = "white"
 $vscode.width = 150
 $vscode.height = 30
 $vscode.location = New-Object System.Drawing.Point(751, 19)
@@ -151,6 +167,7 @@ $vscode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $discord = New-Object system.Windows.Forms.Button
 $discord.text = "Discord"
+$discord.BackColor = "white"
 $discord.width = 150
 $discord.height = 30
 $discord.location = New-Object System.Drawing.Point(920, 19)
@@ -158,6 +175,7 @@ $discord.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $git = New-Object system.Windows.Forms.Button
 $git.text = "Git"
+$git.BackColor = "white"
 $git.width = 150
 $git.height = 30
 $git.location = New-Object System.Drawing.Point(920, 51)
@@ -165,6 +183,7 @@ $git.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $barrier = New-Object system.Windows.Forms.Button
 $barrier.text = "Barrier"
+$barrier.BackColor = "white"
 $barrier.width = 150
 $barrier.height = 30
 $barrier.location = New-Object System.Drawing.Point(920, 84)
@@ -172,6 +191,7 @@ $barrier.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $battlenet = New-Object system.Windows.Forms.Button
 $battlenet.text = "Battle.net"
+$battlenet.BackColor = "white"
 $battlenet.width = 150
 $battlenet.height = 30
 $battlenet.location = New-Object System.Drawing.Point(1090, 19)
@@ -179,6 +199,7 @@ $battlenet.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $unifiedremote = New-Object system.Windows.Forms.Button
 $unifiedremote.text = "Unified Remote"
+$unifiedremote.BackColor = "white"
 $unifiedremote.width = 150
 $unifiedremote.height = 30
 $unifiedremote.location = New-Object System.Drawing.Point(1090, 51)
@@ -186,6 +207,7 @@ $unifiedremote.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $geforcenow = New-Object system.Windows.Forms.Button
 $geforcenow.text = "Nvidia GeforceNow"
+$geforcenow.BackColor = "white"
 $geforcenow.width = 150
 $geforcenow.height = 30
 $geforcenow.location = New-Object System.Drawing.Point(1090, 84)
@@ -193,6 +215,7 @@ $geforcenow.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $Label2 = New-Object system.Windows.Forms.Label
 $Label2.text = "(Chocolatey Required for installs)    Press the app you want to be installed and wait for the 'Operation Completed' alert!"
+$Label2.BackColor = "red"
 $Label2.AutoSize = $true
 $Label2.width = 25
 $Label2.height = 10
@@ -214,6 +237,7 @@ $Label3.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $essentialtweaks = New-Object system.Windows.Forms.Button
 $essentialtweaks.text = "Essential Tweaks"
+$essentialtweaks.BackColor = "green"
 $essentialtweaks.width = 200
 $essentialtweaks.height = 115
 $essentialtweaks.location = New-Object System.Drawing.Point(30, 45)
@@ -221,6 +245,7 @@ $essentialtweaks.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 1
 
 $backgroundapps = New-Object system.Windows.Forms.Button
 $backgroundapps.text = "Background Apps"
+$backgroundapps.BackColor = "white"
 $backgroundapps.width = 150
 $backgroundapps.height = 30
 $backgroundapps.location = New-Object System.Drawing.Point(251, 55)
@@ -228,6 +253,7 @@ $backgroundapps.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12
 
 $cortana = New-Object system.Windows.Forms.Button
 $cortana.text = "Cortana"
+$cortana.BackColor = "white"
 $cortana.width = 150
 $cortana.height = 30
 $cortana.location = New-Object System.Drawing.Point(251, 92)
@@ -235,6 +261,7 @@ $cortana.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $windowssearch = New-Object system.Windows.Forms.Button
 $windowssearch.text = "Windows Search"
+$windowssearch.BackColor = "white"
 $windowssearch.width = 150
 $windowssearch.height = 30
 $windowssearch.location = New-Object System.Drawing.Point(417, 129)
@@ -242,6 +269,7 @@ $windowssearch.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $actioncenter = New-Object system.Windows.Forms.Button
 $actioncenter.text = "Action Center"
+$actioncenter.BackColor = "white"
 $actioncenter.width = 150
 $actioncenter.height = 30
 $actioncenter.location = New-Object System.Drawing.Point(251, 19)
@@ -249,6 +277,7 @@ $actioncenter.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $darkmode = New-Object system.Windows.Forms.Button
 $darkmode.text = "Dark Mode"
+$darkmode.BackColor = "white"
 $darkmode.width = 150
 $darkmode.height = 30
 $darkmode.location = New-Object System.Drawing.Point(417, 17)
@@ -256,6 +285,7 @@ $darkmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $visualfx = New-Object system.Windows.Forms.Button
 $visualfx.text = "Visual FX"
+$visualfx.BackColor = "white"
 $visualfx.width = 150
 $visualfx.height = 30
 $visualfx.location = New-Object System.Drawing.Point(417, 92)
@@ -263,6 +293,7 @@ $visualfx.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $onedrive = New-Object system.Windows.Forms.Button
 $onedrive.text = "OneDrive"
+$onedrive.BackColor = "white"
 $onedrive.width = 150
 $onedrive.height = 30
 $onedrive.location = New-Object System.Drawing.Point(251, 130)
@@ -283,6 +314,7 @@ $Label4.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 24)
 
 $securitylow = New-Object system.Windows.Forms.Button
 $securitylow.text = "Low"
+$securitylow.BackColor = "red"
 $securitylow.width = 150
 $securitylow.height = 30
 $securitylow.location = New-Object System.Drawing.Point(36, 129)
@@ -290,6 +322,7 @@ $securitylow.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 15, [
 
 $securityhigh = New-Object system.Windows.Forms.Button
 $securityhigh.text = "High"
+$securityhigh.BackColor = "green"
 $securityhigh.width = 150
 $securityhigh.height = 30
 $securityhigh.location = New-Object System.Drawing.Point(244, 129)
@@ -382,6 +415,7 @@ $Panel4.location = New-Object System.Drawing.Point(9, 491)
 
 $defaultwindowsupdate = New-Object system.Windows.Forms.Button
 $defaultwindowsupdate.text = "Default Settings"
+$defaultwindowsupdate.BackColor = "red"
 $defaultwindowsupdate.width = 300
 $defaultwindowsupdate.height = 30
 $defaultwindowsupdate.location = New-Object System.Drawing.Point(20, 23)
@@ -389,6 +423,7 @@ $defaultwindowsupdate.Font = New-Object System.Drawing.Font('Microsoft Sans Seri
 
 $securitywindowsupdate = New-Object system.Windows.Forms.Button
 $securitywindowsupdate.text = "Security Updates Only"
+$securitywindowsupdate.BackColor = "green"
 $securitywindowsupdate.width = 300
 $securitywindowsupdate.height = 30
 $securitywindowsupdate.location = New-Object System.Drawing.Point(20, 130)
@@ -453,6 +488,7 @@ $Label22.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $sophia = New-Object system.Windows.Forms.Button
 $sophia.text = "Install Sophia"
+$sophia.BackColor = "green"
 $sophia.width = 200
 $sophia.height = 115
 $sophia.location = New-Object System.Drawing.Point(650, 550)
@@ -474,6 +510,7 @@ $sophia.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 16)
 # $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::zoom
 $lightmode = New-Object system.Windows.Forms.Button
 $lightmode.text = "Light Mode"
+$lightmode.BackColor = "white"
 $lightmode.width = 150
 $lightmode.height = 30
 $lightmode.location = New-Object System.Drawing.Point(417, 55)
@@ -1068,8 +1105,8 @@ $lightmode.Add_Click( {
 		$wshell.Popup("Operation Completed", 0, "Done", 0x0)
 	})
 
-$sophia.Add_Click({
-	   Write-Host "Initializing Sophia project"
+$sophia.Add_Click( {
+		Write-Host "Initializing Sophia project"
 	   
 	   
 	})
