@@ -487,7 +487,7 @@ $Label22.location = New-Object System.Drawing.Point(4, 14)
 $Label22.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $sophia = New-Object system.Windows.Forms.Button
-$sophia.text = "Install Sophia"
+$sophia.text = "Download Sophia"
 $sophia.BackColor = "green"
 $sophia.width = 200
 $sophia.height = 115
