@@ -1119,8 +1119,5 @@ $sophia.Add_Click( {
 	Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 	$wshell.Popup("Operation Completed. Check the Downloads folder for the Sophia script.", 0, "Done", 0x0)
 	})
-	   
-	   
-	})
 
 [void]$Form.ShowDialog()
