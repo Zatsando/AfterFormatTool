@@ -1106,7 +1106,7 @@ $lightmode.Add_Click( {
 	})
 
 $sophia.Add_Click( {
-		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.2/Sophia.v5.2.zip"
+		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.3/Sophia.v5.3.zip"
 		$output = "C:\Users\Zatsando\Downloads\Sophia.5.2.zip"
 		$start_time = Get-Date
 	
