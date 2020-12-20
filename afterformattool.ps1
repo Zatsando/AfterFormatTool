@@ -109,21 +109,21 @@ $greenshot.height = 30
 $greenshot.location = New-Object System.Drawing.Point(250, 84)
 $greenshot.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
-$random = New-Object system.Windows.Forms.Button
-$random.text = "random"
-$random.BackColor = "white"
-$random.width = 150
-$random.height = 30
-$random.location = New-Object System.Drawing.Point(250, 117)
-$random.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+$intellij = New-Object system.Windows.Forms.Button
+$intellij.text = "IntelliJ"
+$intellij.BackColor = "white"
+$intellij.width = 150
+$intellij.height = 30
+$intellij.location = New-Object System.Drawing.Point(250, 117)
+$intellij.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
-$random2 = New-Object system.Windows.Forms.Button
-$random2.text = "random2"
-$random2.BackColor = "white"
-$random2.width = 150
-$random2.height = 30
-$random2.location = New-Object System.Drawing.Point(417, 117)
-$random2.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+$powertoys = New-Object system.Windows.Forms.Button
+$powertoys.text = "Power Toys"
+$powertoys.BackColor = "white"
+$powertoys.width = 150
+$powertoys.height = 30
+$powertoys.location = New-Object System.Drawing.Point(417, 117)
+$powertoys.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $mysqlworkbench = New-Object system.Windows.Forms.Button
 $mysqlworkbench.text = "MySQL Workbench"
@@ -517,7 +517,7 @@ $lightmode.location = New-Object System.Drawing.Point(417, 55)
 $lightmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $Form.controls.AddRange(@($Panel1, $Label1, $Panel2, $Label3, $Panel3, $Label4, $Label15, $Panel4, $Label20, $Label21, $Label23, $PictureBox1, $sophia))
-$Panel1.controls.AddRange(@($installchoco, $random2, $random, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
+$Panel1.controls.AddRange(@($installchoco, $powertoys, $intellij, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $windowssearch, $actioncenter, $darkmode, $visualfx, $onedrive, $Label22, $lightmode))
 $Panel3.controls.AddRange(@($securitylow, $securityhigh, $Label5, $Label6, $Label7, $Label8, $Label9, $Label10, $Label11, $Label12, $Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19))
@@ -636,6 +636,18 @@ $geforcenow.Add_Click( {
 		choco install nvidia-geforce-now -y
 		$wshell.Popup("Operation Completed", 0, "Done", 0x0)
 	})	
+
+$intellij.Add_Click( { 
+		Write-Host "Installing Intellij"
+		choco install intellijidea-ultimate -y
+		$wshell.Popup("Operation Completed", 0, "Done", 0x0)
+	})
+	
+$powertoys.Add_Click( { 
+	Write-Host "Installing Power Toys"
+	choco install powertoys -y
+	$wshell.Popup("Operation Completed", 0, "Done", 0x0)
+})
 	
 $essentialtweaks.Add_Click( { 
 		Write-Host "Creating Restore Point incase something bad happens"
