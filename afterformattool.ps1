@@ -1147,9 +1147,8 @@ $lightmode.Add_Click( {
 
 $sophia.Add_Click( {
 		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.3.1/Sophia.v5.3.1.zip"
-		$output = "C:\Users\%USERPROFILE%\Downloads\Sophia.5.3.1.zip"
+		$output = "C:\Users\%USERPROFILE%\Downloads\Sophia.v5.3.1.zip"
 		$start_time = Get-Date
-	
 		$wc = New-Object System.Net.WebClient
 		$wc.DownloadFile($url, $output)
 		#OR
