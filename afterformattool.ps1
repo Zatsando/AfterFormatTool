@@ -141,6 +141,14 @@ $vlc.height = 30
 $vlc.location = New-Object System.Drawing.Point(584, 19)
 $vlc.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
+$jpegview = New-Object system.Windows.Forms.Button
+$jpegview.text = "JpegView"
+$jpegview.BackColor = "white"
+$jpegview.width = 150
+$jpegview.height = 30
+$jpegview.location = New-Object System.Drawing.Point(584, 117)
+$jpegview.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+
 $androidstudio = New-Object system.Windows.Forms.Button
 $androidstudio.text = "Android Studio"
 $androidstudio.BackColor = "white"
@@ -156,6 +164,14 @@ $onlyoffice.width = 150
 $onlyoffice.height = 30
 $onlyoffice.location = New-Object System.Drawing.Point(751, 51)
 $onlyoffice.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
+
+$ungoogled = New-Object system.Windows.Forms.Button
+$ungoogled.text = "UnGoogled Chromium"
+$ungoogled.BackColor = "white"
+$ungoogled.width = 150
+$ungoogled.height = 30
+$ungoogled.location = New-Object System.Drawing.Point(751, 117)
+$ungoogled.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 10)
 
 $vscode = New-Object system.Windows.Forms.Button
 $vscode.text = "VS Code"
@@ -517,7 +533,7 @@ $lightmode.location = New-Object System.Drawing.Point(417, 55)
 $lightmode.Font = New-Object System.Drawing.Font('Microsoft Sans Serif', 12)
 
 $Form.controls.AddRange(@($Panel1, $Label1, $Panel2, $Label3, $Panel3, $Label4, $Label15, $Panel4, $Label20, $Label21, $Label23, $PictureBox1, $sophia))
-$Panel1.controls.AddRange(@($installchoco, $powertoys, $intellij, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
+$Panel1.controls.AddRange(@($installchoco,$ungoogled, $powertoys, $intellij, $geforcenow, $unifiedremote, $battlenet, $brave, $parsec, $barrier, $discord, $winrar, $xnview, $qbittorrent, $steam, $greenshot, $mysqlworkbench,$jpegview, $vlc, $androidstudio, $onlyoffice, $vscode, $git, $Label2))
 $Panel2.controls.AddRange(@($essentialtweaks, $backgroundapps, $cortana, $windowssearch, $actioncenter, $darkmode, $visualfx, $onedrive, $Label22, $lightmode))
 $Panel3.controls.AddRange(@($securitylow, $securityhigh, $Label5, $Label6, $Label7, $Label8, $Label9, $Label10, $Label11, $Label12, $Label13))
 $Panel4.controls.AddRange(@($defaultwindowsupdate, $securitywindowsupdate, $Label16, $Label17, $Label18, $Label19))
@@ -589,6 +605,12 @@ $vlc.Add_Click( {
 		$wshell.Popup("Operation Completed", 0, "Done", 0x0)
 	})
 
+$jpegview.Add_Click( { 
+	Write-Host "Installing JpegView"
+	choco install jpegview -y
+	$wshell.Popup("Operation Completed", 0, "Done", 0x0)
+	})
+
 $mysqlworkbench.Add_Click( { 
 		Write-Host "Installing MySQL Workbench"
 		choco install mysql.workbench-be -y
@@ -646,6 +668,12 @@ $intellij.Add_Click( {
 $powertoys.Add_Click( { 
 	Write-Host "Installing Power Toys"
 	choco install powertoys -y
+	$wshell.Popup("Operation Completed", 0, "Done", 0x0)
+})
+
+$ungoogled.Add_Click( { 
+	Write-Host "Installing Ungoogled Chromium"
+	choco install ungoogled-chromium -y
 	$wshell.Popup("Operation Completed", 0, "Done", 0x0)
 })
 	
@@ -1118,8 +1146,8 @@ $lightmode.Add_Click( {
 	})
 
 $sophia.Add_Click( {
-		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.3/Sophia.v5.3.zip"
-		$output = "C:\Users\Zatsando\Downloads\Sophia.5.2.zip"
+		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.3.1/Sophia.v5.3.1.zip"
+		$output = "C:\Users\%USERPROFILE%\Downloads\Sophia.5.3.1.zip"
 		$start_time = Get-Date
 	
 		$wc = New-Object System.Net.WebClient
