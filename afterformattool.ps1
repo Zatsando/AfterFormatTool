@@ -29,7 +29,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 $Form = New-Object system.Windows.Forms.Form
 $Form.ClientSize = New-Object System.Drawing.Point(1300, 700)
 $Form.BackColor = "gray"
-$Form.text = "After Format Tool"
+$Form.text = "Supernite"
 $Form.TopMost = $false
 
 $Panel1 = New-Object system.Windows.Forms.Panel
@@ -38,7 +38,7 @@ $Panel1.width = 1400
 $Panel1.location = New-Object System.Drawing.Point(9, 90)
 
 $Label1 = New-Object system.Windows.Forms.Label
-$Label1.text = "AFT Windows 10 script"
+$Label1.text = "Supernite (Windows 10 edition)"
 $Label1.AutoSize = $true
 $Label1.width = 40
 $Label1.height = 20
