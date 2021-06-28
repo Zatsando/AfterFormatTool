@@ -1149,13 +1149,8 @@ $sophia.Add_Click( {
 		$url = "https://github.com/farag2/Windows-10-Sophia-Script/releases/download/5.10.8/Sophia.Script.v5.10.8.zip"
 		$output = "C:\Users\%USERPROFILE%\Downloads\Sophia.v5.10.8.zip"
 		$start_time = Get-Date
-		$wc = New-Object System.Net.WebClient
-		$wc.DownloadFile($url, $output)
-		#OR
-		(New-Object System.Net.WebClient).DownloadFile($url, $output)
-	
-		Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
-		$wshell.Popup("Operation Completed. Check the Downloads folder for the Sophia script.", 0, "Done", 0x0)
+		Invoke-WebRequest -Uri $url -OutFile $output
+                Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 	})
 
 
